@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShiridiSai Yattra Travels | Shirdi Sai Baba Yatra</title>
+<meta name="description" content="ShiridiSai Yattra Travels – Chennai to Shirdi pilgrimage packages, temple visits, flight travel, accommodation and VIP darshan.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--maroon:#5a1028;--deep:#310816;--gold:#f4b51b;--cream:#fff8ea;--text:#3b2723;--green:#16a05d;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:Poppins,Arial,sans-serif;background:var(--cream);color:var(--text);line-height:1.65}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1160px,92%);margin:auto}
+.topbar{background:#210510;color:#ffe8ae;padding:8px 0;font-size:14px}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:100;background:rgba(49,8,22,.97);box-shadow:0 5px 22px #0004}
+.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{display:flex;align-items:center;gap:10px;color:#fff}
+.logo-mark{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;background:var(--gold);color:var(--maroon);font-size:25px;font-weight:800}
+.logo strong{font-family:Marcellus,serif;font-size:20px;display:block;color:#fff}
+.logo span{font-size:11px;color:#ffd98a}
+nav{display:flex;align-items:center;gap:5px}
+nav a{color:#fff2d2;padding:10px 13px;border-radius:24px;font-weight:600;font-size:14px}
+nav a:hover{background:#ffffff18}
+nav .book{background:var(--gold);color:var(--deep)}
+.menu{display:none;background:none;border:1px solid #ffffff55;color:#fff;font-size:25px;padding:6px 11px;border-radius:9px}
+.hero{position:relative;overflow:hidden}
+.hero .container{min-height:650px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:50px;padding:65px 0}
+.badge{display:inline-flex;gap:8px;align-items:center;background:#fff2c7;color:var(--maroon);font-weight:800;border-radius:50px;padding:8px 16px;margin-bottom:18px}
+.hero h1{font-family:Marcellus,serif;font-size:clamp(45px,7vw,82px);line-height:1;color:#ffd04a}
+.hero h1 span{display:block;color:#fff}
+.hero .tag{font-family:Marcellus,serif;color:#ffe5ad;font-size:25px;margin:16px 0 8px}
+.hero p{color:#ffe4d4;max-width:650px}
+.price{display:inline-flex;align-items:baseline;gap:9px;margin:22px 0;background:var(--gold);color:var(--deep);padding:10px 22px;border-radius:14px;box-shadow:0 8px 20px #0004}
+.price b{font-size:38px}
+.price small{font-weight:700}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:50px;padding:13px 21px;font-weight:800;cursor:pointer}
+.btn.gold{background:var(--gold);color:var(--deep)}
+.btn.green{background:var(--green);color:#fff}
+.btn.outline{border:1px solid #fff8;color:#fff}
+.hero-card{background:#fff;border:7px solid #fff;border-radius:25px;overflow:hidden;box-shadow:0 25px 60px #0006;transform:rotate(1deg)}
+.hero-card img{width:100%;height:510px;object-fit:cover;object-position:center top}
+.hero-card .caption{background:#fff;color:var(--maroon);padding:12px 15px;font-weight:800;text-align:center}
+.stats{margin-top:-35px;position:relative;z-index:4}
+.stats-grid{background:#fff;border:2px solid #e3bd5b;border-radius:20px;box-shadow:0 15px 35px #5a102833;display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden}
+.stat{padding:20px;text-align:center;border-right:1px dashed #d6bd8d}
+.stat:last-child{border:0}
+.stat b{display:block;color:var(--maroon);font-family:Marcellus,serif;font-size:25px}
+.stat span{font-size:13px;color:#765e51}
+section{padding:82px 0}
+.section-head{text-align:center;max-width:760px;margin:0 auto 38px}
+.kicker{color:#b06b00;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:2px}
+h2{font-family:Marcellus,serif;font-size:clamp(32px,5vw,48px);color:var(--maroon);margin:6px 0 10px}
+.lead{color:#6e574d}
+.package{background:#f4e4c7}
+.package-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}
+.poster{background:#fff;padding:12px;border-radius:20px;box-shadow:0 15px 35px #0002}
+.poster img{width:100%;max-height:720px;object-fit:cover;border-radius:12px}
+.feature-list{display:grid;gap:14px}
+.feature{background:#fff;border-radius:16px;padding:17px 19px;display:flex;gap:13px;align-items:flex-start;border-left:5px solid var(--gold);box-shadow:0 7px 20px #5a102812}
+.icon{width:42px;height:42px;flex:none;border-radius:12px;background:#fff0c4;display:grid;place-items:center;font-size:21px}
+.feature b{display:block;color:var(--maroon);font-size:17px}
+.feature span{font-size:14px;color:#6b5449}
+.places{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.place{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 9px 25px #5a10281b}
+.place .pic{height:220px;overflow:hidden;background:linear-gradient(135deg,#7b2546,#e7a920)}
+.place img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.place:hover img{transform:scale(1.05)}
+.place-body{padding:18px}
+.place h3{font-family:Marcellus,serif;color:var(--maroon);font-size:23px}
+.place p{font-size:14px;color:#705a50;margin-top:4px}
+.itinerary{background:#fff}
+.timeline{max-width:900px;margin:auto;position:relative}
+.day{display:grid;grid-template-columns:130px 1fr;gap:22px;margin-bottom:22px}
+.day-label{background:var(--maroon);color:#fff;border-radius:16px;padding:16px;text-align:center;height:max-content}
+.day-label b{font-family:Marcellus,serif;font-size:24px;color:var(--gold);display:block}
+.day-card{background:#fff8e8;border:1px solid #ead3a5;border-radius:16px;padding:20px}
+.day-card h3{font-family:Marcellus,serif;color:var(--maroon);font-size:23px}
+.day-card li{margin:5px 0 0 20px}
+.gallery{background:#f4e4c7}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.gallery-grid figure{margin:0;background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 8px 20px #0002}
+.gallery-grid img{width:100%;height:260px;object-fit:cover}
+.gallery-grid figcaption{padding:10px 13px;font-weight:700;color:var(--maroon);font-size:14px}
+.booking{background:linear-gradient(135deg,var(--deep),var(--maroon));color:#fff}
+.booking-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:35px;align-items:center}
+.booking h2{color:var(--gold)}
+.booking .lead{color:#ffe0d2}
+.contact-card{background:#fff;color:var(--text);border-radius:20px;padding:26px;box-shadow:0 20px 50px #0004}
+.contact-card h3{font-family:Marcellus,serif;color:var(--maroon);font-size:27px;margin-bottom:10px}
+.phone{display:block;color:var(--green);font-size:24px;font-weight:800;margin:6px 0}
+.contact-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}
+.address{background:#fff5d9;padding:13px 15px;border-radius:12px;margin-top:14px;font-size:14px}
+.social{margin-top:18px;font-size:14px}
+.social a{color:#b02069;font-weight:800}
+footer{background:#210510;color:#ffd9c7;text-align:center;padding:35px 15px 75px}
+footer strong{font-family:Marcellus,serif;color:var(--gold);font-size:25px}
+.fab{position:fixed;right:18px;bottom:18px;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-size:30px;z-index:120;box-shadow:0 10px 25px #0005}
+.small-note{font-size:12px;color:#806a5e;margin-top:8px}
+@media(max-width:900px){
+ nav{position:absolute;left:0;right:0;top:74px;background:var(--deep);display:none;flex-direction:column;align-items:stretch;padding:12px 4%}
+ nav.open{display:flex}
+ nav a{padding:13px}
+ .menu{display:block}
+ .hero .container,.package-grid,.booking-grid{grid-template-columns:1fr}
+ .hero-card{order:-1;max-width:480px;margin:auto}
+ .hero-card img{height:430px}
+ .places{grid-template-columns:1fr 1fr}
+}
+@media(max-width:650px){
+ .topbar .container{justify-content:center;text-align:center}
+ .stats-grid{grid-template-columns:1fr 1fr}
+ .stat:nth-child(2){border-right:0}
+ .stat:nth-child(-n+2){border-bottom:1px dashed #d6bd8d}
+ .places,.gallery-grid{grid-template-columns:1fr}
+ .gallery-grid img{height:240px}
+ .day{grid-template-columns:1fr;gap:10px}
+ .day-label{display:flex;justify-content:space-between;align-items:center}
+ .day-label b{display:inline}
+ .hero .container{padding:45px 0}
+ .hero-card img{height:360px}
+}
+
+/* ============ NEW: modern layer ============ */
+:root{--glow:#ffcf5a;--rose:#7a1c3f}
+body.locked{overflow:hidden}
+::selection{background:var(--gold);color:var(--deep)}
+header{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:rgba(36,6,17,.82)}
+nav a{transition:.25s}
+nav a:hover{background:#ffffff1f;transform:translateY(-1px)}
+.btn{transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 26px #0005}
+.btn.gold{background:linear-gradient(135deg,#ffd45c,#f0a90f)}
+.btn.green{background:linear-gradient(135deg,#1fbf72,#118a4e)}
+
+/* ---- door intro ---- */
+#gate{position:fixed;inset:0;z-index:2000;perspective:1800px;overflow:hidden;pointer-events:auto}
+#gate.done{display:none}
+.door{position:absolute;top:0;width:50.4%;height:100%;transition:transform 2.6s cubic-bezier(.7,0,.2,1);
+ background:
+  radial-gradient(circle at 50% 50%,#00000000 0,#0000004d 100%),
+  repeating-linear-gradient(90deg,#4a0f26 0 22px,#560f2b 22px 44px);
+ box-shadow:inset 0 0 90px #000b;will-change:transform;backface-visibility:hidden}
+.door.l{left:0;transform-origin:left center;border-right:3px solid var(--gold)}
+.door.r{right:0;transform-origin:right center;border-left:3px solid var(--gold)}
+.door::before{content:"";position:absolute;inset:7% 9%;border:3px solid #f4b51bcc;border-radius:14px;
+ box-shadow:inset 0 0 0 10px #4a0f26,inset 0 0 0 12px #f4b51b66,0 0 30px #f4b51b33}
+.door::after{content:"";position:absolute;inset:14% 16%;border-radius:10px;
+ background:
+  radial-gradient(circle at 50% 50%,#f4b51b22,transparent 62%),
+  repeating-linear-gradient(45deg,#f4b51b14 0 2px,transparent 2px 16px),
+  repeating-linear-gradient(-45deg,#f4b51b14 0 2px,transparent 2px 16px);
+ border:1px solid #f4b51b55}
+.knob{position:absolute;top:50%;width:38px;height:38px;border-radius:50%;z-index:2;
+ background:radial-gradient(circle at 35% 30%,#fff1b8,#f4b51b 55%,#8a5a00);box-shadow:0 4px 14px #000a}
+.door.l .knob{right:26px}.door.r .knob{left:26px}
+#gate.open .door.l{transform:rotateY(-112deg)}
+#gate.open .door.r{transform:rotateY(112deg)}
+.beam{position:absolute;left:50%;top:0;height:100%;width:2px;transform:translateX(-50%);
+ background:linear-gradient(transparent,#ffe08a,transparent);box-shadow:0 0 90px 40px #ffcf5a88;opacity:0;transition:opacity 1.2s}
+#gate.open .beam{opacity:1;animation:beam 2.4s forwards}
+@keyframes beam{0%{opacity:0}30%{opacity:1;width:60px}100%{opacity:0;width:900px}}
+.gate-center{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:5;text-align:center;
+ width:min(86vw,520px);padding:34px 20px;transition:opacity 1s .9s,transform 1.6s .9s}
+.gate-center::before{content:"";position:absolute;inset:-6% -2%;border-radius:50%;z-index:-1;
+ background:radial-gradient(closest-side,#2a0714f2 55%,#2a071400);filter:blur(2px)}
+.om{font-size:clamp(78px,17vw,140px);line-height:1;color:var(--gold);text-shadow:0 0 28px #ffcf5acc,0 0 70px #f4b51b88;animation:pulse 2.6s ease-in-out infinite}
+.gate-center h1{font-family:Marcellus,serif;font-weight:400;color:#fff;font-size:clamp(28px,6vw,48px);letter-spacing:3px;margin-top:6px;text-shadow:0 3px 18px #000}
+.gate-center p{color:#ffe3a3;font-size:14px;letter-spacing:4px;text-transform:uppercase;margin-top:8px}
+.enter{margin-top:24px;border:0;cursor:pointer;font:700 15px Poppins,sans-serif;color:var(--deep);padding:13px 30px;border-radius:50px;
+ background:linear-gradient(135deg,#ffe07a,#f0a90f);box-shadow:0 0 0 0 #ffcf5a99;animation:ring 2s infinite}
+@keyframes pulse{50%{transform:scale(1.07);text-shadow:0 0 40px #ffcf5a,0 0 100px #f4b51baa}}
+@keyframes ring{70%{box-shadow:0 0 0 20px #ffcf5a00}100%{box-shadow:0 0 0 0 #ffcf5a00}}
+#gate.open .gate-center{opacity:0;transform:translate(-50%,-50%) scale(1.5)}
+@media (prefers-reduced-motion:reduce){.door,.gate-center{transition-duration:.4s}.om,.enter{animation:none}}
+
+/* ---- hero with big temple video ---- */
+.hero{min-height:calc(100vh - 110px);display:flex;align-items:center;background:#1d040d}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:blur(26px) brightness(.62) saturate(1.3);transform:scale(1.25)}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;
+ background:linear-gradient(100deg,#240510e6 0%,#3d0a1ca8 34%,#3d0a1c1a 62%,#24051066 100%),linear-gradient(0deg,#240510 0%,transparent 28%)}
+.hero .container{position:relative;z-index:2;min-height:0;width:min(1200px,92%);padding:42px 0 56px}
+.hero h1{text-shadow:0 6px 30px #000a;background:linear-gradient(180deg,#fff2b0,#f4b51b);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero h1 span{-webkit-text-fill-color:#fff;color:#fff}
+.hero .tag{font-style:italic}
+.badge{background:#fff2c7e6;backdrop-filter:blur(6px)}
+.price{background:linear-gradient(135deg,#ffd45c,#f0a90f)}
+.temple-label{position:absolute;left:4%;bottom:22px;z-index:3;color:#ffe3a3;font-size:13px;letter-spacing:2px;text-transform:uppercase;display:flex;gap:8px;align-items:center}
+.temple-label i{width:9px;height:9px;border-radius:50%;background:#ff4d4d;box-shadow:0 0 0 4px #ff4d4d44;animation:pulse 1.6s infinite}
+
+/* ---- tap-to-play video cards ---- */
+.vcard{position:relative;border-radius:26px;overflow:hidden;background:#000;cursor:pointer;isolation:isolate;
+ box-shadow:0 24px 55px #0007;border:6px solid #fff;aspect-ratio:9/16;-webkit-tap-highlight-color:transparent}
+.vcard video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000;display:block}
+.vcard .shade{position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,#000a,transparent 40%,transparent 70%,#0005);transition:opacity .3s;pointer-events:none}
+.vplay{position:absolute;z-index:2;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;border:0;
+ display:grid;place-items:center;color:var(--deep);font-size:30px;padding-left:5px;cursor:pointer;
+ background:linear-gradient(135deg,#ffe07a,#f0a90f);box-shadow:0 0 0 0 #ffcf5aaa,0 10px 30px #0008;animation:ring 2s infinite;transition:opacity .25s,transform .25s}
+.vcard:hover .vplay{transform:scale(1.1)}
+.tcard{cursor:pointer}.tcard .vcap{font-size:15px}
+.vcard.playing .vplay{opacity:0;pointer-events:none;animation:none}
+.vcard.playing:hover .vplay{opacity:.9;pointer-events:auto}
+.vcard.playing .shade{opacity:.35}
+.vcap{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:16px 16px 18px;color:#fff;font-weight:700;font-size:14px;pointer-events:none}
+.vcap small{display:block;font-weight:500;color:#ffe3a3;font-size:12px}
+.vbar{position:absolute;z-index:3;left:0;bottom:0;height:4px;width:0;background:var(--gold)}
+.hero-card.vcard{border-radius:28px;max-width:360px;margin-left:auto;transform:rotate(1.5deg);transition:transform .4s;width:100%;overflow:hidden}
+.hero-card.vcard:hover{transform:rotate(0) scale(1.02)}
+.hero-card .vcap{background:none}
+.live-tag{position:absolute;z-index:3;top:14px;left:14px;background:#000a;color:#fff;font-size:12px;font-weight:700;padding:5px 11px;border-radius:30px;backdrop-filter:blur(6px)}
+
+/* ---- voices ---- */
+.voices{background:radial-gradient(circle at 20% 0,#7a1c3f 0,transparent 55%),linear-gradient(160deg,#2a0714,#4a0f26);color:#fff;position:relative;overflow:hidden}
+.voices h2{color:var(--gold)}.voices .lead{color:#ffe0d2}.voices .kicker{color:#ffd15a}
+.voices-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.voices .vcard{border-color:#ffffff22;border-width:3px;transition:transform .35s}
+.voices .vcard:hover{transform:translateY(-8px)}
+.hint{text-align:center;color:#ffe3a3;margin-top:26px;font-size:14px}
+
+/* ---- video gallery ---- */
+.vgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;grid-auto-flow:dense}
+.vgrid .vcard{border-width:4px;border-radius:20px;box-shadow:0 10px 26px #0003}
+.vgrid .vcard.wide{grid-column:span 2;aspect-ratio:16/9}
+.vgrid .vcard img.poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.vgrid .vcard:hover img.poster{transform:scale(1.07)}
+.vgrid .vplay{width:56px;height:56px;margin:-28px 0 0 -28px;font-size:22px}
+.dur{position:absolute;z-index:2;top:10px;right:10px;background:#000a;color:#fff;font-size:11px;font-weight:700;padding:3px 8px;border-radius:20px}
+
+/* ---- lightbox ---- */
+#lb{position:fixed;inset:0;z-index:1500;background:#120208ee;backdrop-filter:blur(8px);display:none;align-items:center;justify-content:center;padding:18px}
+#lb.show{display:flex}
+#lb video{max-height:88vh;max-width:min(94vw,520px);border-radius:18px;box-shadow:0 20px 70px #000;background:#000}
+#lb.landscape video{max-width:min(94vw,900px)}
+#lb button{position:absolute;top:16px;right:18px;width:46px;height:46px;border-radius:50%;border:0;font-size:24px;cursor:pointer;background:var(--gold);color:var(--deep);font-weight:800}
+
+/* ---- reveal ---- */
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s,transform .9s}
+.rv.in{opacity:1;transform:none}
+.place,.feature,.day-card{transition:transform .3s,box-shadow .3s}
+.place:hover,.feature:hover{transform:translateY(-6px);box-shadow:0 18px 34px #5a102830}
+.place .vcard{border:0;border-radius:0;aspect-ratio:auto;height:220px;box-shadow:none}
+.place .vplay{width:52px;height:52px;margin:-26px 0 0 -26px;font-size:20px}
+h2{background:linear-gradient(90deg,var(--maroon),var(--rose));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.booking h2,.voices h2{background:none;-webkit-text-fill-color:currentColor}
+@media(max-width:1000px){.voices-grid,.vgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.hero{min-height:0}.hero .container{padding:50px 0 60px}.hero-card.vcard{margin:auto;max-width:300px;order:2}.hero-card.vcard{max-width:340px}}
+@media(max-width:520px){.voices-grid,.vgrid{gap:12px}.vplay{width:60px;height:60px;margin:-30px 0 0 -30px;font-size:24px}.door .knob{width:28px;height:28px}}
+
+</style>
+</head>
+<body class="locked">
+<div id="gate" aria-label="Welcome">
+  <div class="door l"><span class="knob"></span></div>
+  <div class="door r"><span class="knob"></span></div>
+  <div class="beam"></div>
+  <div class="gate-center">
+    <div class="om">ॐ</div>
+    <h1>Om Sai Ram</h1>
+    <p>ShiridiSai Yattra Travels</p>
+    <button class="enter" id="enter">Tap to open the door ✦</button>
+  </div>
+</div>
+
+
+<div class="topbar">
+  <div class="container">
+    <span>🙏 Om Sai Ram · Faith & Patience</span>
+    <span>📞 <a href="tel:+917200370091">+91 72003 70091</a> · <a href="tel:+919500025901">+91 95000 25901</a></span>
+  </div>
+</div>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">
+      <div class="logo-mark">ॐ</div>
+      <div><strong>ShiridiSai Yattra</strong><span>TRAVELS · CHENNAI</span></div>
+    </a>
+    <button class="menu" id="menu" aria-label="Open menu">☰</button>
+    <nav id="nav">
+      <a href="#home">Home</a>
+      <a href="#package">Package</a>
+      <a href="#places">Places</a>
+      <a href="#itinerary">Itinerary</a>
+      <a href="#voices">Voices</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a class="book" href="#contact">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <video class="hero-bg" src="media/v2.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video>
+  <div class="container">
+    <div class="rv">
+      <div class="badge">✈️ Chennai → Mumbai · Shirdi Yatra</div>
+      <h1>Shirdi <span>Trip</span></h1>
+      <div class="tag">“Why fear when I am here.”</div>
+      <p>Travel with ShiridiSai Yattra Travels for a devotional journey covering Shirdi Sai Baba, Jyotirlinga temples, Ellora Caves, Mumbai and other important pilgrimage places.</p>
+      <div class="price"><b>₹18,500/-</b><small>per person</small></div>
+      <div class="actions">
+        <a class="btn green" href="https://wa.me/917200370091?text=Hello%20ShiridiSai%20Yattra%20Travels%2C%20I%20want%20details%20about%20the%20Shirdi%20trip." target="_blank">💬 WhatsApp Booking</a>
+        <a class="btn gold" href="tel:+917200370091">📞 Call Now</a>
+        <a class="btn outline" href="#package">Explore Package ↓</a>
+      </div>
+    </div>
+    <div class="hero-card vcard tcard rv" id="temple">
+      <video src="media/v2.mp4" poster="media/v2.jpg" autoplay muted loop playsinline preload="auto"></video>
+      <div class="shade"></div><span class="live-tag">🛕 Shirdi Sai Baba Temple</span>
+      <div class="vcap"><span id="soundhint">🔊 Tap for sound</span><small>Evening aarti · Shirdi</small></div>
+    </div>
+  </div>
+  <div class="temple-label"><i></i> Shirdi Sai Baba Temple · Evening Aarti</div>
+</section>
+
+<div class="stats">
+  <div class="container stats-grid">
+    <div class="stat"><b>₹18,500</b><span>Package price</span></div>
+    <div class="stat"><b>Flight</b><span>Chennai ↔ Maharashtra</span></div>
+    <div class="stat"><b>VIP Darshan</b><span>Temple visit support</span></div>
+    <div class="stat"><b>Veg Food</b><span>Breakfast · Lunch · Dinner</span></div>
+  </div>
+</div>
+
+<section class="package" id="package">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Our service</div>
+      <h2>Everything arranged for your Yatra</h2>
+      <p class="lead">The uploaded trip poster lists two-way flights, A/C transport, star hotel accommodation, temple visits, VIP darshan, vegetarian food and a Tamil guide.</p>
+    </div>
+    <div class="package-grid">
+      <div class="poster"><img src="media/img/i0.jpg" alt="Original ShirdiSai Yattra trip poster"></div>
+      <div class="feature-list">
+        <div class="feature"><div class="icon">✈️</div><div><b>Two-way Flights</b><span>Flight travel is included in the advertised package.</span></div></div>
+        <div class="feature"><div class="icon">🚌</div><div><b>A/C Transport</b><span>Air-conditioned transport for the trip.</span></div></div>
+        <div class="feature"><div class="icon">🏨</div><div><b>Star Hotel Accommodation</b><span>Hotel accommodation as listed in the package.</span></div></div>
+        <div class="feature"><div class="icon">🙏</div><div><b>VIP Darshan</b><span>Shirdi darshan and temple visits are included as advertised.</span></div></div>
+        <div class="feature"><div class="icon">🥗</div><div><b>Vegetarian Meals</b><span>Breakfast, lunch and dinner for the advertised travel days.</span></div></div>
+        <div class="feature"><div class="icon">🗣️</div><div><b>Tamil Guide</b><span>Tamil guide support is listed in the original package poster.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="voices" id="voices">
+  <div class="container">
+    <div class="section-head rv">
+      <div class="kicker">Real people · Real Yatra</div>
+      <h2>Voices of the Yatra</h2>
+      <p class="lead">Our travellers and team share the journey in their own words. Tap any video to play it.</p>
+    </div>
+    <div class="voices-grid">
+<div class="vcard rv" data-v="3">
+  <video preload="none" playsinline webkit-playsinline poster="media/v3.jpg" data-src="media/v3.mp4"></video>
+  <div class="shade"></div><span class="dur">0:44</span>
+  <button class="vplay" aria-label="Play video">▶</button>
+  <div class="vcap">Yatra experience<small>Tap to play with sound</small></div><div class="vbar"></div>
+</div>
+<div class="vcard rv" data-v="15">
+  <video preload="none" playsinline webkit-playsinline poster="media/v15.jpg" data-src="media/v15.mp4"></video>
+  <div class="shade"></div><span class="dur">1:56</span>
+  <button class="vplay" aria-label="Play video">▶</button>
+  <div class="vcap">Traveller's story<small>Tap to play with sound</small></div><div class="vbar"></div>
+</div>
+<div class="vcard rv" data-v="16">
+  <video preload="none" playsinline webkit-playsinline poster="media/v16.jpg" data-src="media/v16.mp4"></video>
+  <div class="shade"></div><span class="dur">1:08</span>
+  <button class="vplay" aria-label="Play video">▶</button>
+  <div class="vcap">Sharing the joy<small>Tap to play with sound</small></div><div class="vbar"></div>
+</div>
+<div class="vcard rv" data-v="17">
+  <video preload="none" playsinline webkit-playsinline poster="media/v17.jpg" data-src="media/v17.mp4"></video>
+  <div class="shade"></div><span class="dur">2:27</span>
+  <button class="vplay" aria-label="Play video">▶</button>
+  <div class="vcap">Our tour team speaks<small>Tap to play with sound</small></div><div class="vbar"></div>
+</div>
+    </div>
+    <p class="hint">🔊 Videos play with sound. Tap again to pause.</p>
+  </div>
+</section>
+
+<section id="places">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Real destination references</div>
+      <h2>Places on the Yatra</h2>
+      <p class="lead">Destination cards use real-place imagery where available. Some photos are loaded from Wikimedia Commons, so an internet connection is needed for those images.</p>
+    </div>
+    <div class="places">
+      <article class="place">
+        <div class="pic"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shirdi%20Sai%20Baba%20Samadhi.jpg" alt="Shirdi Sai Baba Samadhi Temple" loading="lazy" onerror="this.src='media/img/i1.jpg'"></div>
+        <div class="place-body"><h3>Shirdi Sai Baba</h3><p>Shirdi · Sai Baba Samadhi Temple and darshan.</p></div>
+      </article>
+      <article class="place">
+        <div class="pic"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Trimbakeshwar%20Shiva%20Temple%2C%20Trimbak%2C%20Nashik%20District%2C%20Maharastra.jpg" alt="Trimbakeshwar Shiva Temple" loading="lazy" onerror="this.src='media/img/i2.jpg'"></div>
+        <div class="place-body"><h3>Trimbakeshwar</h3><p>Nashik · Jyotirlinga temple visit.</p></div>
+      </article>
+      <article class="place">
+        <div class="pic"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Shani%20Shingnapur%20Shani%20dev%20temple.jpg" alt="Shani Shingnapur Temple" loading="lazy" onerror="this.src='media/img/i3.jpg'"></div>
+        <div class="place-body"><h3>Shani Shingnapur</h3><p>Shani Dev temple listed in the package itinerary.</p></div>
+      </article>
+      <article class="place">
+        <div class="pic"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ellora%20Caves.jpg" alt="Ellora Caves" loading="lazy" onerror="this.src='media/img/i4.jpg'"></div>
+        <div class="place-body"><h3>Ellora Caves</h3><p>Historic cave complex included among visiting places.</p></div>
+      </article>
+      <article class="place">
+        <div class="pic"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Gateway%20of%20India%20Mumbai.jpg" alt="Gateway of India Mumbai" loading="lazy" onerror="this.src='media/img/i5.jpg'"></div>
+        <div class="place-body"><h3>Gateway of India</h3><p>Mumbai sightseeing listed in the original trip poster.</p></div>
+      </article>
+      <article class="place">
+        <div class="pic"><div class="vcard" data-v="1"><video preload="none" playsinline webkit-playsinline poster="media/v1.jpg" data-src="media/v1.mp4"></video><div class="shade"></div><button class="vplay" aria-label="Play video">▶</button><div class="vbar"></div></div></div>
+        <div class="place-body"><h3>Trip Experience</h3><p>A real moment from our Yatra – tap to play.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="itinerary" id="itinerary">
+  <div class="container">
+    <div class="section-head">
+      <div class="kicker">Travel plan</div>
+      <h2>Simple 3-day Yatra flow</h2>
+      <p class="lead">The original material highlights Chennai–Mumbai flight travel, Shirdi darshan, Jyotirlinga temples, Ellora and Mumbai sightseeing.</p>
+    </div>
+    <div class="timeline">
+      <div class="day">
+        <div class="day-label"><b>Day 1</b><span>Temple Yatra</span></div>
+        <div class="day-card"><h3>Chennai → Mumbai · Trimbakeshwar</h3><ul><li>Flight travel from Chennai to Mumbai as advertised.</li><li>A/C transport and hotel arrangement.</li><li>Nashik Trimbakeshwar Shiva Temple visit with VIP darshan.</li></ul></div>
+      </div>
+      <div class="day">
+        <div class="day-label"><b>Day 2</b><span>Shirdi</span></div>
+        <div class="day-card"><h3>Shirdi Sai Baba Darshan</h3><ul><li>Shirdi Sai Baba darshan with the advertised VIP-darshan support.</li><li>Visit Shri Khandoba Mandir and other listed Shirdi places.</li><li>Meals and Tamil guide support as advertised.</li></ul></div>
+      </div>
+      <div class="day">
+        <div class="day-label"><b>Day 3</b><span>Maharashtra</span></div>
+        <div class="day-card"><h3>Heritage & Return Journey</h3><ul><li>Visiting places listed include Ellora Caves and Grishneshwar.</li><li>Shani Shingnapur and Mumbai sightseeing are included in the original material.</li><li>Return flight from Maharashtra toward Chennai.</li></ul></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-head rv">
+      <div class="kicker">Real trip moments</div>
+      <h2>Yatra Video Gallery</h2>
+      <p class="lead">Real clips from our Shirdi Yatra – airport, flight, food and temple moments. Tap any video to watch it full size.</p>
+    </div>
+    <div class="vgrid">
+<div class="vcard rv " data-v="4" data-lb="1"><img class="poster" src="media/v4.jpg" alt="Yatra ID cards" loading="lazy"><div class="shade"></div><span class="dur">0:02</span><button class="vplay" aria-label="Play video">▶</button><div class="vcap">Yatra ID cards<small>Ready for the journey</small></div></div>
+<div class="vcard rv " data-v="6" data-lb="1"><img class="poster" src="media/v6.jpg" alt="Airport selfie" loading="lazy"><div class="shade"></div><span class="dur">0:06</span><button class="vplay" aria-label="Play video">▶</button><div class="vcap">Airport selfie<small>Smiles at the gate</small></div></div>
+<div class="vcard rv " data-v="5" data-lb="1"><img class="poster" src="media/v5.jpg" alt="Fun on the flight" loading="lazy"><div class="shade"></div><span class="dur">1:07</span><button class="vplay" aria-label="Play video">▶</button><div class="vcap">Fun on the flight<small>Travelling together</small></div></div>
+<div class="vcard rv " data-v="7" data-lb="1"><img class="poster" src="media/v7.jpg" alt="Little traveller" loading="lazy"><div class="shade"></div><span class="dur">0:09</span><button class="vplay" aria-label="Play video">▶</button><div class="vcap">Little traveller<small>Yatra family</small></div></div>
+<div class="vcard rv " data-v="9" data-lb="1"><img class="poster" src="media/v9.jpg" alt="Airport walk" loading="lazy"><div class="shade"></div><span class="dur">0:07</span><button class="vplay" aria-label="Play video">▶</button><div class="vcap">Airport walk<small>On the way to Shirdi</small></div></div>
+<div class="vcard rv wide" data-v="11" data-lb="1"><img class="poster" src="media/v11.jpg" alt="Tea &amp; lunch time" loading="lazy"><div class="shade"></div><span class="dur">0:28</span><button class="vplay" aria-label="Play video">▶</button><div class="vcap">Tea &amp; lunch time<small>Dining together</small></div></div>
+<div class="vcard rv " data-v="8" data-lb="1"><img class="poster" src="media/v8.jpg" alt="Meal time" loading="lazy"><div class="shade"></div><span class="dur">0:12</span><button class="vplay" aria-label="Play video">▶</button><div class="vcap">Meal time<small>Fresh vegetarian food</small></div></div>
+<div class="vcard rv " data-v="10" data-lb="1"><img class="poster" src="media/v10.jpg" alt="Lunch break" loading="lazy"><div class="shade"></div><span class="dur">0:25</span><button class="vplay" aria-label="Play video">▶</button><div class="vcap">Lunch break<small>Together at the table</small></div></div>
+<div class="vcard rv " data-v="14" data-lb="1"><img class="poster" src="media/v14.jpg" alt="Vegetarian buffet" loading="lazy"><div class="shade"></div><span class="dur">0:19</span><button class="vplay" aria-label="Play video">▶</button><div class="vcap">Vegetarian buffet<small>Breakfast · Lunch · Dinner</small></div></div>
+<div class="vcard rv " data-v="13" data-lb="1"><img class="poster" src="media/v13.jpg" alt="Dining hall" loading="lazy"><div class="shade"></div><span class="dur">0:08</span><button class="vplay" aria-label="Play video">▶</button><div class="vcap">Dining hall<small>Comfortable stops</small></div></div>
+<div class="vcard rv " data-v="12" data-lb="1"><img class="poster" src="media/v12.jpg" alt="Airport escalator" loading="lazy"><div class="shade"></div><span class="dur">0:02</span><button class="vplay" aria-label="Play video">▶</button><div class="vcap">Airport escalator<small>Smooth travel</small></div></div>
+<div class="vcard rv " data-v="1" data-lb="1"><img class="poster" src="media/v1.jpg" alt="Temple visit" loading="lazy"><div class="shade"></div><span class="dur">0:14</span><button class="vplay" aria-label="Play video">▶</button><div class="vcap">Temple visit<small>Darshan moments</small></div></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="booking" id="contact">
+  <div class="container booking-grid">
+    <div>
+      <div class="kicker" style="color:#ffd15a">Contact & booking</div>
+      <h2>Plan your Shirdi Yatra</h2>
+      <p class="lead">Call or WhatsApp the travel team for current availability, dates, flight details and booking information.</p>
+      <div class="actions">
+        <a class="btn green" href="https://wa.me/917200370091?text=Hello%20ShiridiSai%20Yattra%20Travels%2C%20I%20want%20to%20book%20the%20Shirdi%20trip." target="_blank">💬 WhatsApp 72003 70091</a>
+        <a class="btn gold" href="tel:+917200370091">📞 Call 72003 70091</a>
+      </div>
+      <div class="social">Instagram: <a href="https://www.instagram.com/shirdi_sai_yattra_travels/" target="_blank">@shirdi_sai_yattra_travels</a></div>
+    </div>
+    <div class="contact-card">
+      <h3>ShiridiSai Yattra Travels</h3>
+      <a class="phone" href="tel:+917200370091">+91 72003 70091</a>
+      <a class="phone" href="tel:+919500025901">+91 95000 25901</a>
+      <div class="address">📍 <b>Chennai Office</b><br>No.30/53, Gandhi Road,<br>Chitlapakkam, Chennai – 600 064</div>
+      <div class="contact-actions">
+        <a class="btn green" href="https://wa.me/917200370091?text=Hello%20ShiridiSai%20Yattra%20Travels%2C%20please%20share%20the%20latest%20Shirdi%20trip%20details." target="_blank">WhatsApp</a>
+        <a class="btn gold" href="tel:+919500025901">Call second number</a>
+        <a class="btn" style="background:var(--maroon);color:#fff" href="https://www.google.com/maps/search/?api=1&query=Gandhi+Road+Chitlapakkam+Chennai+600064" target="_blank">Get Directions</a>
+      </div>
+      <p class="small-note">Please confirm the current package price, dates, flight timings and availability directly before booking.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <strong>ShiridiSai Yattra Travels</strong>
+  <p>🙏 Om Sai Ram · Faith · Patience · Safe Journey</p>
+  <p style="margin-top:8px">© <span id="year"></span> ShiridiSai Yattra Travels</p>
+</footer>
+
+<a class="fab" href="https://wa.me/917200370091?text=Hello%20ShiridiSai%20Yattra%20Travels%2C%20I%20need%20Shirdi%20trip%20details." target="_blank" aria-label="WhatsApp">💬</a>
+
+<script>
+const $=(q,r=document)=>r.querySelector(q), $$=(q,r=document)=>[...r.querySelectorAll(q)];
+const menu=$('#menu'),nav=$('#nav');
+menu.addEventListener('click',()=>nav.classList.toggle('open'));
+$$('nav a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+$('#year').textContent=new Date().getFullYear();
+
+/* ---- door intro ---- */
+const gate=$('#gate');let opened=false;
+function openGate(){
+  if(opened)return;opened=true;
+  gate.classList.add('open');
+  setTimeout(()=>document.body.classList.remove('locked'),1500);
+  setTimeout(()=>{gate.classList.add('done');const h=$('.hero-bg');if(h){h.play().catch(()=>{})}},3200);
+}
+$('#enter').addEventListener('click',openGate);
+gate.addEventListener('click',openGate);
+setTimeout(openGate,4200);
+
+/* ---- tap-to-play cards ---- */
+let current=null;
+function stopAll(except){
+  $$('.vcard:not(.tcard) video').forEach(v=>{if(v!==except&&!v.paused){v.pause();v.closest('.vcard').classList.remove('playing')}});
+}
+function toggle(card){
+  const v=$('video',card);
+  if(!v.src){v.src=v.dataset.src;}
+  if(v.paused){
+    stopAll(v);
+    v.muted=false;
+    const p=v.play();
+    if(p&&p.catch)p.catch(()=>{v.muted=true;v.play().catch(()=>{})});
+    card.classList.add('playing');
+  }else{v.pause();card.classList.remove('playing')}
+}
+$$('.vcard:not(.tcard) video').forEach(v=>{
+  const c=v.closest('.vcard');
+  v.addEventListener('timeupdate',()=>{const b=$('.vbar',c);if(b&&v.duration)b.style.width=(v.currentTime/v.duration*100)+'%'});
+  v.addEventListener('ended',()=>{c.classList.remove('playing');const b=$('.vbar',c);if(b)b.style.width='0'});
+  v.addEventListener('pause',()=>c.classList.remove('playing'));
+  v.addEventListener('play',()=>c.classList.add('playing'));
+});
+$$('.vcard:not(.tcard)').forEach(c=>{
+  if(c.dataset.lb){c.addEventListener('click',()=>openLB(c.dataset.v,c.classList.contains('wide')))}
+  else c.addEventListener('click',()=>toggle(c));
+});
+
+/* ---- temple video: tap for sound ---- */
+const tc=$('#temple'),tv=$('video',tc),th=$('#soundhint');
+tc.addEventListener('click',()=>{tv.muted=!tv.muted;if(tv.paused)tv.play().catch(()=>{});th.textContent=tv.muted?'🔊 Tap for sound':'🔇 Tap to mute'});
+/* ---- lightbox for gallery ---- */
+const lb=document.createElement('div');lb.id='lb';
+lb.innerHTML='<button aria-label="Close">✕</button><video controls playsinline></video>';
+document.body.appendChild(lb);
+const lv=$('video',lb);
+function openLB(n,wide){
+  stopAll();lb.classList.toggle('landscape',!!wide);
+  lv.poster='media/v'+n+'.jpg';lv.src='media/v'+n+'.mp4';lb.classList.add('show');
+  lv.play().catch(()=>{});
+}
+function closeLB(){lv.pause();lv.removeAttribute('src');lv.load();lb.classList.remove('show')}
+lb.addEventListener('click',e=>{if(e.target===lb||e.target.tagName==='BUTTON')closeLB()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB()});
+
+/* ---- reveal on scroll ---- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+$$('.rv').forEach(el=>io.observe(el));
+$$('.section-head,.place,.feature,.day').forEach(el=>{el.classList.add('rv');io.observe(el)});
+/* pause background temple video when hidden */
+document.addEventListener('visibilitychange',()=>{const h=$('.hero-bg');if(!h)return;document.hidden?h.pause():h.play().catch(()=>{})});
+</script>
+</body>
+</html>
